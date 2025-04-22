@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Skylanders Deck Builder</title>
+  
+</head>
+<body>
+  <div class="gallery">
+    <div class="gallery-header">
+      <img src="images/assets/title_collection.png" alt="" id="title-CollectHeader">
+      <br>
+      <div class="filter-container">
+        <label for="element-filter"><strong>Filter by Element:</strong></label>
+        <select id="element-filter">
+          <option value="all">All</option>
+          <option value="fire">Fire</option>
+          <option value="water">Water</option>
+          <option value="earth">Earth</option>
+          <option value="air">Air</option>
+          <option value="magic">Magic</option>
+          <option value="tech">Tech</option>
+          <option value="undead">Undead</option>
+          <option value="life">Life</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+
+        <label for="type-filter"><strong>Filter by Type:</strong></label>
+        <select id="type-filter">
+          <option value="all">All</option>
+          <option value="core">Core</option>
+          <option value="giant">Giant</option>
+          <option value="swap force">Swap Force</option>
+          <option value="trap master">Trap Master</option>
+          <option value="super charger">Super Charger</option>
+          <option value="sensei">Sensei</option>
+          <option value="villain sensei">Villain Sensei</option>
+        </select>
+
+        <label for="game-filter"><strong>Filter by Game:</strong></label>
+        <select id="game-filter">
+          <option value="all">All</option>
+          <option value="spyros adventure">Spyro's Adventure</option>
+          <option value="giants">Giants</option>
+          <option value="swap force">Swap Force</option>
+          <option value="trap team">Trap Team</option>
+          <option value="superchargers">SuperChargers</option>
+          <option value="imaginators">Imaginators</option>
+        </select>
+
+        <div style="margin-top: 0.5rem;">
+          <label>
+            <input type="checkbox" id="include-previous-games" />
+            Include previous games
+          </label>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="gallery-container"></div>
+  </div>
+
+  <div class="deck">
+    <img src="images/assets/title_deck.png" alt="" id="title-CollectHeader">
+    <div id="deck-tools">
+      <button id="toggle-gallery">🧩 Hide Collection</button>
+      <button id="clear-deck-button">🔁 Clear Deck</button>
+      <button id="random-deck-button">🎲 Random Deck</button>
+      <button id="random-per-element-button">🌈 Random Per Element</button>
+      <button id="random-one-button">🎯 Random One</button>
+      <button id="export-deck-button">💾 Export Deck</button>
+      <button id="import-deck-button">📂 Import Deck</button>
+      <input type="file" id="import-deck-input" accept=".json" style="display: none;" />
+    </div>
+    
+
+    <div id="deck-container"></div>
+
+    
+    
+    <div id="trash-zone"> 
+      <img src="images/elements/chompchest.png" alt="🗑️ Drag here to remove a card" title="🗑️ Drag here to remove a card" class="trash-icon">
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
+  
+</body>
+</html>
