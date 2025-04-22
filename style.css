@@ -127,27 +127,27 @@
 
     .bg-spyros-adventure {
 
-      background-image: url('/images/assets/background_ssa.jpg');
+      background-image: url('images/assets/background_ssa.jpg');
     }
 
     .bg-giants {
-      background-image: url('/images/assets/background_sg.jpg');
+      background-image: url('images/assets/background_sg.jpg');
     }
 
     .bg-swap-force {
-      background-image: url('/images/assets/background_ssf.jpg');
+      background-image: url('images/assets/background_ssf.jpg');
     }
 
     .bg-trap-team {
-      background-image: url('/images/assets/background_stt.jpg');
+      background-image: url('images/assets/background_stt.jpg');
     }
 
     .bg-superchargers {
-      background-image: url('/images/assets/background_ssc.jpg');
+      background-image: url('images/assets/background_ssc.jpg');
     }
 
     .bg-imaginators {
-      background-image: url('/images/assets/background_si.jpg');
+      background-image: url('images/assets/background_si.jpg');
     }
 
     #gallery-container {
